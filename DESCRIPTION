@@ -1,12 +1,22 @@
 Type: Package
 Package: happifndata
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line) Use four
-    spaces when indenting paragraphs within the Description.
+Title: Data for happifn package
+Version: 0.0.0.9000
+Authors@R: person(
+             "Paul", "Carteron", 
+             email = "carteronpaul@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-6942-6662")
+             )
+Maintainer: Paul Carteron <carteronpaul@gmail.com>
+Description: IFN spatial data are quite large and they cannot be on CRAN. 
+    happifdata is made for storing them outside happifn.
 License: GPL (>= 3)
+Depends: 
+    R (>= 2.10)
 Encoding: UTF-8
 LazyData: true
+LazyDataCompression: xz
 RoxygenNote: 7.2.3
+URL: https://github.com/paul-carteron/happifndata
+BugReports: https://github.com/paul-carteron/happifndata/issues
