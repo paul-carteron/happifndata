@@ -18,4 +18,4 @@ zp <- read_sf("/vsizip//vsicurl/https://inventaire-forestier.ign.fr/IMG/zip/zp25
 zp <- st_transform(zp, 2154)
 st_crs(zp)$wkt <- gsub("é", "e", st_crs(zp)$wkt)
 
-usethis::use_data(ser, ser_ar, rfn, zp, overwrite = TRUE)
+usethis::use_data(ser, ser_ar, rfn, zp, overwrite = TRUE, compress = "xz", version = 2)
